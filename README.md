@@ -1,7 +1,10 @@
-# proyecto-redes-gssoo20
+# Server Network to Client Player
 
 Main server to clients socket communication.
 Send image by socket in c.
+
+
+
 
 
 
@@ -15,9 +18,9 @@ Tamara Lues - 15638936
 
 Claudio Prieto - 1664039J
 
-### Instrucciones para correr el programa
+### Instrucciones
 
-Para correr el programa, es necesario hacer make de la carpeta server tanto como de la carpeta client. Luego, se debe primero ejecutar el servidor de la forma:
+Make: carpeta server tanto como de la carpeta client. 
 ```
 ./server -i <ip_address> -p <tcp_port>
 ```
