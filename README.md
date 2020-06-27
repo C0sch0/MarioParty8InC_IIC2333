@@ -1,5 +1,10 @@
 # proyecto-redes-gssoo20
 
+Main server to clients socket communication.
+Send image by socket in c.
+
+
+
 ### Integrantes
 
 Antonia Christensen - 15636682
