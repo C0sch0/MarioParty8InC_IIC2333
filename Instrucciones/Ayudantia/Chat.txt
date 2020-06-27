@@ -1,0 +1,118 @@
+08:29:42	 From Arcoirisky : estar tan temprano debería ser ilegal
+08:30:08	 From Ariel Martínez : :C
+08:30:28	 From Raimundo Martínez Rioseco : Lo que dijo Arcoirisky
+08:31:12	 From Arcoirisky : venimos por tiiii SIENTE EL AMOR CON SUEÑO
+08:31:33	 From Arcoirisky : creo q es la primera ayudantia/clase que vengo en semanas kskdns
+08:33:17	 From Raimundo Martínez Rioseco : Vamos a esperar un par de minutos más para que llegue gente
+08:37:42	 From Arcoirisky : sueño
+08:37:44	 From Arcoirisky : lskdk
+08:38:01	 From lucas : si
+08:38:06	 From SERGIO GAZALI ALLEN : si
+08:38:13	 From Max Schudeck : Que no tengo ni idea como partir
+08:38:16	 From Diego Iruretagoyena : Entretenido, pero poco tiempo
+08:38:18	 From Rodrigo Cortés Badilla : super chora
+08:38:32	 From Arcoirisky : nope, no quería entrar en terror xD
+08:38:57	 From Arcoirisky : quizás deberían grabar la ayudantia
+08:39:03	 From Arcoirisky : para los que no están aquí
+08:41:35	 From Sebastian Meneses Musalem : pregunta
+08:42:08	 From Ariel Martínez : pregunta
+08:42:27	 From Sebastian Meneses Musalem : tu defines la IP en el programa, pero ¿no tendría que ser algo que ya esta definido?
+08:43:40	 From Ariel Martínez : Eso responde tu pregunta?
+08:49:26	 From Patrick : sorry, llegue tarde por temas de la casa. Van a subir la ayudantía?
+08:49:33	 From Ariel Martínez : Sí
+08:49:36	 From Patrick : :D
+08:49:44	 From Ariel Martínez : Para ti
+08:50:05	 From Patrick : <3
+08:50:17	 From Patrick : (el codigo tambien ?)
+08:50:23	 From Ariel Martínez : Sí
+08:50:27	 From Patrick : uhhh nice
+08:50:28	 From Patrick : gracias
+08:54:31	 From Patrick : pero como hace accept 2 veces si solo hace listen a 1?
+08:55:21	 From Patrick : ahh okok gracias
+08:56:57	 From Rodrigo Cortés Badilla : Lo que tenia entendido es que el listen es pra el servidor, hace que el server escuche, el acept es para los clientes y es para que “acepten” conectarse al server
+08:57:00	 From Rodrigo Cortés Badilla : esta bien eso?
+08:57:48	 From Ariel Martínez : O sea el accept igual es para el servidor
+08:58:07	 From Ariel Martínez : El listen mantiene una cola de clientes que se quieren conectar y accept los “hace pasar” al servidor
+08:59:04	 From Patrick : Así como yo lo entendi, un cliente queda en la cola de listen (que es de largo 1) hasta que el servidor lo acepta. Ahí deja la cola libre para que entre otro, hasta que el servidor lo acepte. 
+08:59:11	 From SERGIO GAZALI ALLEN : mientras no lleguen clientes, esa función se queda “esperando” antes de los accept?
+08:59:42	 From Patrick : para que se hace &len o & id?
+08:59:47	 From Patrick : si son ints no?
+08:59:59	 From Ariel Martínez : Listen es no bloqueante (asíncrona)
+09:00:13	 From Patrick : ohh ok
+09:00:14	 From Ariel Martínez : Entonces no se queda esperado
+09:00:26	 From SERGIO GAZALI ALLEN : yaa bacán gracias
+09:00:33	 From Patrick : gracias
+09:00:52	 From Patrick : mas abajo
+09:00:56	 From Patrick : ahi donde estabamos
+09:01:10	 From Patrick : nono mas abajo
+09:01:33	 From Patrick : ahi arriba
+09:04:44	 From Patrick : por que estaba 1+1+pS ?
+09:05:32	 From Patrick : ahh nono ya caxe
+09:05:53	 From Patrick : gracias
+09:09:36	 From Patrick : ya perfecto
+09:12:46	 From Ariel Martínez : Patrick se pone &variable para que POSIX escriba en la dirección de memoria correspondiente
+09:12:59	 From Ariel Martínez : En realidad el valor del id y de len no le importan a recv()
+09:13:02	 From Ariel Martínez : Se entiende?
+09:17:12	 From Patrick : sii si cache
+09:17:15	 From lucas : estoy con internet malo asique por aca
+09:17:15	 From Patrick : gracias
+09:18:46	 From Patrick : ip 0.0.0.0 es valido?
+09:19:16	 From Ariel Martínez : Sí
+09:19:41	 From Ariel Martínez : jaja
+09:19:48	 From Ariel Martínez : Es una dirección IP especial
+09:20:27	 From Ariel Martínez : Hace referencia a todas las direcciones IP locales
+09:20:39	 From Patrick : ohh dale
+09:20:40	 From Patrick : gracias
+09:21:26	 From Patrick : yaa gracias
+09:21:42	 From DANIEL SOTO SILVA : para el proyecto es valido poner esa ip ?
+09:21:57	 From Ariel Martínez : Para el proyecto la IP se tiene que recibir como argumento :)
+09:22:06	 From Patrick : si pusieramos el ip publica aqui, y la op publica de mi compañero en su casa funcionaría ?
+09:22:24	 From Patrick : @ariel ahhy agracias
+09:22:35	 From Ariel Martínez : No caché muy bien tu pregunta
+09:22:47	 From Patrick : jaja tranquil, y a cache
+09:22:48	 From Ariel Martínez : Ahora vamos a ver la parte del cliente, quizá se entienda mejor
+09:22:49	 From Patrick : gracias
+09:26:07	 From Patrick : sii
+09:27:14	 From Patrick : es necesario poner (struct sockaddr*) andtes de &server_addr ?
+09:27:59	 From Patrick : jaja ya gracias
+09:28:00	 From Patrick : claro
+09:28:09	 From Patrick : okok
+09:28:12	 From Patrick : testear nomas
+09:28:20	 From Patrick : gracias :)
+09:28:37	 From Juan Schuwirth : tienen ejemplos de como se cierra la conexión?
+09:29:57	 From Ariel Martínez : Sí, están al final del main del cliente
+09:29:59	 From Ariel Martínez : Ahora los mostramos
+09:31:28	 From Juan Schuwirth : ya buena, gracias !
+09:33:49	 From Patrick : (si llevas las ventanas a las esquinas se agarra a un cuarto)
+09:34:08	 From Patrick : @Rai
+09:36:25	 From Patrick : perdio los tildes :o (?)
+09:36:30	 From Patrick : Eso es x el enconding ?
+09:36:32	 From Max Schudeck : perdió el á
+09:36:55	 From Ariel Martínez : :O
+09:37:14	 From Ariel Martínez : Debe ser algo del encoding
+09:37:24	 From Patrick : dale gracias
+09:37:46	 From mr.pepo877(raul) : por que los clientes no pueden mandar mensajes al mismo tiempo?
+09:38:20	 From Ariel Martínez : Porque el programa está construido con un solo thread, entonces tiene que atender a un cliente a la vez
+09:38:35	 From Ariel Martínez : Si quisieras que los dos puedan comunicarse al mismo tiempo necesitarías dos threads en el servidor
+09:38:40	 From mr.pepo877(raul) : aaaaa dale
+09:38:51	 From Ariel Martínez : Para que pueda hacer recv() de ambos clientes a la vez
+09:39:11	 From Ariel Martínez : (En el proyecto cada jugador tiene su turno, así que basta con un thread jajaja)
+09:39:36	 From Patrick : nice
+09:39:37	 From mr.pepo877(raul) : ajaajaj buenisima un grande
+09:43:57	 From lucas : gracias!
+09:45:33	 From Patrick : está simpatico la tarea haha
+09:47:29	 From Rodrigo Cortés Badilla : Una duda, es que en el enunciado dice que los compilados deben funcionar como ./cliente -i puerto -p comexion
+09:47:40	 From Rodrigo Cortés Badilla : esos parametros -i y -p
+09:47:44	 From Rodrigo Cortés Badilla : que son?
+09:48:50	 From Rodrigo Cortés Badilla : ahhhh
+09:48:53	 From Patrick : las preguntas x donde las hacemos? issues?
+09:50:21	 From Sarah Everke : Chao, gracias
+09:50:32	 From Patrick : gracias
+09:50:44	 From Pablo : gracias!
+09:55:29	 From Juan Schuwirth : todo bien
+09:55:32	 From Juan Schuwirth : gracias
+09:55:47	 From Patrick : chao gracias
+09:55:50	 From Juan Schuwirth : adioos
+09:55:57	 From Juan Schuwirth : uuuh
+09:56:00	 From Juan Schuwirth : shots taken
+09:56:10	 From mr.pepo877(raul) : ajjajja era fomisimo el p1 muchisimas gracias 
